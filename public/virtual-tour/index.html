@@ -1,0 +1,92 @@
+<!DOCTYPE html>      
+
+<html>
+    
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+        <title>360 Virtual Tour PHP</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content=""/>
+        <meta charset="UTF-8">
+
+         <link href="css/owl.carousel.css" media="all" rel="stylesheet" type="text/css" />
+         <link href="css/virtual.css" media="all" rel="stylesheet" type="text/css" />
+         <link href="css/animate.css" media="all" rel="stylesheet" type="text/css" />
+         <link href="css/loaders.css" media="all" rel="stylesheet" type="text/css" />
+          <link href="css/font-awesome.min.css" rel="stylesheet">
+
+
+         <script src="js/jquery-1.12.2.min.js"></script>
+         <script>
+            /* If you want to stop starting auto scroll panorama  just change 'false' value below. */
+            var autoScrol = true;
+         </script>
+    </head>
+    <body>
+        <div class="panorama-body">
+
+            <div id="panorama">
+			<div id="pan-canvas"></div>
+			<div class="panos-menu">
+               <div id="panos-list">
+                    <ul id="menu-show">
+                       <div class="menu-centered">
+                           <div class="owl-carousel">
+
+
+                            </div>
+                        </div>
+                    </ul>
+                   
+                    <div class="pan-description"></div>
+                    <i id="rotate" class="menu-button fa fa-chevron-down" aria-hidden="true"></i>
+                    <span id="fullScreenMode" >
+                       <span id="fullscreenPan"><img id="fullscreen-icon" src="images/fullscreen.png"></span>
+                    </span>
+                    <div id="loader-pan" class="fadeInLeft animated">
+                    <div class="wrapper">
+                        <div class="cssload-loader"></div>
+                    </div>
+                </div>
+                </div>
+			</div>
+			               <div id="loader-wrapper">
+                    <div class="first-wrapper">
+                    <div class="first-cssload-loader"></div>
+                </div>
+                    <div class="loader-section section-left"></div>
+                    <div class="loader-section section-right"></div>
+                </div>
+            </div>
+            <div class="top_buttons"></div>
+
+            <div class="keys">
+              <div class="zoom_conrol">
+                    <span id="zoom_in"><img class="zoom" src="images/zoom-in.png"></span>
+                    <span id="zoom_out"><img class="zoom" src="images/zoom-out.png"></span>
+                </div>
+               
+                <div class="control-key">
+                    <img class="control_keys" id="left_key" src="images/left_button.png">
+                    <img class="control_keys" id="right_key" src="images/right_button.png">
+                    <img class="control_keys" id="up_key" src="images/up_button.png">
+                    <img class="control_keys" id="down_key" src="images/down_button.png">
+                    <img class="control_keys" id="elipse_key" src="images/elipse.png">
+                </div>
+            </div> 
+
+            <script src="js/three.min.js"></script>
+            <script src="js/jquery.fullscreen.js"></script>
+            <script src="js/DeviceOrientationControls.js"></script>
+            <script src="js/mousehold.js"></script>
+            <script src="js/owl.carousel.min.js"></script>
+            <script src="js/mousetrap.min.js"></script>
+            <script src="js/jquery.touch.js"></script>
+            <script src="js/360.virtual.tour.js"></script>  
+        </div>
+            <input id="source-url" type="hidden" value="sources/">
+    </body>
+
+</html>
+
+
